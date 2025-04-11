@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Daniel Abramiani</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://kit.fontawesome.com/b5998aa8b2.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.webp">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Daniel Abramiani</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Daniel Abramiani</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./images/image.png" alt="profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Daniel Abramiani</h1>
+            <p class="section__text_p2">Front End Developer</p>
+
+            <div class="btn-container">
+                <button class="btn2" onclick="cvOpen()">Download CV</button>
+                <button class="btn1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+
+            <div id="socials-container">
+                <i class="fa-brands fa-linkedin-in" onclick="location.href='https://www.linkedin.com/in/daniel-abramiani-986439310/'"></i>
+                <i class="fa-brands fa-upwork" onclick="location.href='https://www.upwork.com/freelancers/~0125291bae5ae7f1ed'"></i>
+            </div>
+        </div>
+    </section>
+
+    <div id="about">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/daniel-removebg-preview.png" alt="Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hi, I'm Daniel. I live in Tbilisi and study at Goal Oriented Academy (GOA), one of the top programming academies. 
+                        I began my programming journey on September 26, 2023, and I'm working toward becoming a full-stack developer, 
+                        mastering both front-end and back-end development.
+                    </p>
+    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front End</span><br>Js, tailwindcss, css, html Intermidate</li>
+                            <li><span>Back End</span><br>Python, Node js, Git Basic</li>
+                            <li><span>Web design</span><br>Figma</li>
+                        </ul>
+                    </div>
+    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023–2024</span><br>Started learning Figma and still improving my design skills</li>
+                            <li><span>2023</span><br>Began studying Python and continue learning more every day</li>
+                            <li><span>2024</span><br>Diving deeper into HTML, CSS, and JavaScript</li>
+                        </ul>
+                    </div>
+    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>September 26, 2023</span><br>Joined Goal Oriented Academy (GOA) to pursue a career in programming</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button class="btn2" onclick="location.href='https://github.com/danielabramiani/Geo/tree/main/my-next-tailwind-app'">
+                        Github
+                    </button>
+                    <button class="btn1" onclick="location.href='https://geo-vsxp.vercel.app/'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+
+            <div class="details-container color-container">
+        
+                <h2 class="experience-sub-title project-title">Project Two</h2>
+                <div class="btn-container">
+                    <button class="btn2" onclick="location.href=''">
+                        Github
+                    </button>
+                    <button class="btn1" onclick="location.href=''">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title">Project Three</h2>
+                <div class="btn-container">
+                    <button class="btn2" onclick="location.href=''">
+                        Github
+                    </button>
+                    <button class="btn1" onclick="location.href=''">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <i class="fa-solid fa-arrow-down-short-wide" onclick="location.href='./#contact'" id="icon-arrow"></i>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <i class="fa-solid fa-envelope"></i>
+            <p><a href="mailto:danielabramaini4@gmail.com">danielabramaini4@gmail.com</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Daniel Abramiani. All Rights Reserved.</p>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
